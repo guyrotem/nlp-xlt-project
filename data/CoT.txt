@@ -1,0 +1,1 @@
+Try to think in steps, first translate the question to English, answer it, then translate the final answer back to {{ lang }}.

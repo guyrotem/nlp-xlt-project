@@ -1,0 +1,15 @@
+{
+  "qa": {
+    "index": 9,
+    "question": "Tina makes $18.00 an hour.  If she works more than 8 hours per shift, she is eligible for overtime, which is paid by your hourly wage + 1/2 your hourly wage.  If she works 10 hours every day for 5 days, how much money does she make?",
+    "gold_answer": 990
+  },
+  "result": {
+    "english_raw": "\n\nTina would make $270.00 for the week. She would make $144.00 for the 8 hours of regular pay, and $126.00 for the 10 hours of overtime pay ($18.00 x 10 hours = $180.00, then $180.00 + ($18.00 x 1/2 = $9.00) = $189.00, then $189.00 x 1.5 = $283.50, then $283.50 - $13.50 (for the extra 1/2 hour of overtime) = $270.00).",
+    "english_fsl": 1080,
+    "hebrew_fsl": 810,
+    "hebrew_fsl_cot": 162,
+    "japanese_fsl": "990.00",
+    "japanese_fsl_cot": "936.00"
+  }
+}

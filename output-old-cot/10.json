@@ -1,0 +1,15 @@
+{
+  "qa": {
+    "index": 10,
+    "question": "A deep-sea monster rises from the waters once every hundred years to feast on a ship and sate its hunger. Over three hundred years, it has consumed 847 people. Ships have been built larger over time, so each new ship has twice as many people as the last ship. How many people were on the ship the monster ate in the first hundred years?",
+    "gold_answer": 121
+  },
+  "result": {
+    "english_raw": "\n\nThe first ship the monster ate would have had 423 people.",
+    "english_fsl": 141,
+    "hebrew_fsl": 280,
+    "hebrew_fsl_cot": 282,
+    "japanese_fsl": 282,
+    "japanese_fsl_cot": 282
+  }
+}

@@ -9,7 +9,7 @@ import warnings
 from dumper import dump
 from facades.translation import TranslationFacade
 from facades.openai_facade import OpenAi
-from facades.gsm8k_parser import Gsm8kParser
+from facades.gsm8k_parser import Gsm8kParser, QA
 
 from prompt_processor import PromptProcessor
 from response_extractor import extract_result
@@ -21,23 +21,27 @@ gsm8k_parser = Gsm8kParser()
 
 
 @dataclass
+class LangResults:
+    raw: str
+    fsl: int
+    cot: int
+
+
+@dataclass
 class Results:
     english_raw: str
     english_fsl: int
-    hebrew_fsl: int
-    hebrew_fsl_cot: int
-    japanese_fsl: int
-    japanese_fsl_cot: int
+    lang_results: dict[str, LangResults]
 
 
 def run(english_prompt):
-    translated_he = translation_facade.translate(english_prompt, 'he')
-    translated_ja = translation_facade.translate(english_prompt, 'ja')
-
-    he_fsl_result = get_result(translated_he, False, 'he')
-    he_cot_result = get_result(translated_he, True, 'he')
-    ja_fsl_result = get_result(translated_ja, False, 'ja')
-    ja_cot_result = get_result(translated_ja, True, 'ja')
+    res = {}
+    for lang in ['he', 'ja', 'es']:
+        translated = translation_facade.translate(english_prompt, lang)
+        raw_result = open_ai.complete(translated)
+        fsl_result = get_result(translated, False, lang)
+        cot_result = get_result(translated, True, lang)
+        res[lang] = LangResults(raw_result, fsl_result, cot_result)
 
     english_raw = open_ai.complete(english_prompt)
     english_fsl_result = get_result(english_prompt, False, 'en')
@@ -45,10 +49,7 @@ def run(english_prompt):
     return Results(
         english_raw,
         english_fsl_result,
-        he_fsl_result,
-        he_cot_result,
-        ja_fsl_result,
-        ja_cot_result,
+        res,
     )
 
 
@@ -59,25 +60,21 @@ def get_result(prompt, cot, target_lang):
     try:
         return int(result_str.replace("$", "").replace("%", ""))
     except ValueError:
-        warnings.warn('Failed to extract number from result: TL {}, CoT {}, result: {}'.format(target_lang, cot, result_str))
+        warnings.warn(
+            'Failed to extract number from result: TL {}, CoT {}, result: {}'.format(target_lang, cot, result_str)
+        )
         return result_str
 
 
-@dataclass
-class Gsm8kItem:
-    question: str
-    answer: str
-
-
 if __name__ == '__main__':
-    qa = gsm8k_parser.get_items()[55]
-    # result = run(
-    #     'There are 9 Fast and the Furious movies, Deepa has seen each one in the theatre three times. She has spent '
-    #     '$216 seeing these movies. What is the average price she paid per ticket?',
-    # )
+    q = 'There are 9 Fast and the Furious movies, Deepa has seen each one in the theatre three times. She has spent ' \
+        '$216 seeing these movies. What is the average price she paid per ticket? '
+    # result = run(q)
+    # dump(QA(1234, q, 8), result)
     # print(result)
-    result2 = run(qa.question)
-
-    dump(qa, result2)
-    print(result2)
-    print(qa.gold_answer)
+    for qa in gsm8k_parser.get_items()[11:12]:
+        if qa.index in [11]:
+            result = run(qa.question)
+            dump(qa, result)
+            print(result)
+            print(qa.gold_answer)

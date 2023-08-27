@@ -7,6 +7,7 @@ class TranslationFacade():
             "ja": "Japanese",
             "he": "Hebrew",
             "en": "English",
+            "es": "Spanish",
         }
 
     def translate(self, text, target_lang):

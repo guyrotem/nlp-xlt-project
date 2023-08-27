@@ -1,0 +1,15 @@
+{
+  "qa": {
+    "index": 3,
+    "question": "Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?",
+    "gold_answer": 42
+  },
+  "result": {
+    "english_raw": "\n\nJulie should read 24 pages tomorrow.",
+    "english_fsl": 48,
+    "hebrew_fsl": 53,
+    "hebrew_fsl_cot": 53,
+    "japanese_fsl": 48,
+    "japanese_fsl_cot": 42
+  }
+}

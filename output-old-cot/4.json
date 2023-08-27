@@ -1,0 +1,15 @@
+{
+  "qa": {
+    "index": 4,
+    "question": "James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?",
+    "gold_answer": 624
+  },
+  "result": {
+    "english_raw": "\n\nJames writes 3 pages to 2 different friends twice a week, which is 24 pages a month and 288 pages a year.",
+    "english_fsl": 624,
+    "hebrew_fsl": 312,
+    "hebrew_fsl_cot": 312,
+    "japanese_fsl": 624,
+    "japanese_fsl_cot": 312
+  }
+}

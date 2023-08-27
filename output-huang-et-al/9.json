@@ -1,0 +1,28 @@
+{
+  "qa": {
+    "index": 9,
+    "question": "Tina makes $18.00 an hour.  If she works more than 8 hours per shift, she is eligible for overtime, which is paid by your hourly wage + 1/2 your hourly wage.  If she works 10 hours every day for 5 days, how much money does she make?",
+    "gold_answer": 990
+  },
+  "result": {
+    "english_raw": "\n\nTina would make $270.00 for the week. She would make $144.00 for the 8 hours of regular pay, and $126.00 for the 10 hours of overtime pay ($18.00 x 10 hours = $180.00, then $180.00 + ($18.00 x 1/2 = $9.00) = $189.00, then $189.00 x 1.5 = $283.50, then $283.50",
+    "english_fsl": 198,
+    "lang_results": {
+      "he": {
+        "raw": "\n\n\u05d4\u05d9\u05d0 \u05de\u05e8\u05d5\u05d5\u05d9\u05d7\u05d4 $270.00. \u05d4\u05d9\u05d0 \u05de\u05e8\u05d5\u05d5\u05d9\u05d7\u05d4 $18.00 \u05dc\u05e9\u05e2\u05d4 \u05e2\u05d1\u05d5\u05e8 8 \u05e9\u05e2\u05d5\u05ea, \u05d5$27.00 \u05dc\u05e9\u05e2\u05d4 \u05e2\u05d1\u05d5\u05e8 \u05e9\u05ea\u05d9 \u05d4\u05e9\u05e2\u05d5\u05ea \u05d4\u05e0\u05d5\u05e1\u05e4\u05d5\u05ea. \u05d4\u05e1\u05db\u05d5",
+        "fsl": "A: \u05d8\u05d9\u05e0\u05d4 \u05de\u05e8\u05d5\u05d5\u05d9\u05d7\u05d4 18$ \u05dc\u05e9\u05e2\u05d4. \u05d0\u05dd \u05d4\u05d9\u05d0 \u05e2\u05d5\u05d1\u05d3\u05ea \u05d9\u05d5\u05ea\u05e8 \u05de-8 \u05e9\u05e2\u05d5\u05ea \u05d1\u05de\u05e9\u05de\u05e8\u05ea, \u05d4\u05d9\u05d0 \u05d6\u05db\u05d0\u05d9\u05ea \u05dc\u05e9\u05e2\u05d5\u05ea \u05e0\u05d5\u05e1\u05e4\u05d5\u05ea \u05d4\u05de\u05e9\u05d5\u05dc\u05dd \u05dc",
+        "cot": "A: Tina earns 18$ per hour. She works 10 hours a day for 5 days. She is entitled to additional hours paid at her hourly rate + 1/2 her hourly rate. Therefore"
+      },
+      "ja": {
+        "raw": "\n\nChristina will earn $18.00 per hour. If she works more than 8 hours per shift, she is eligible for overtime pay, which is 1.5 times her regular hourly rate. If she works 10 hours a day for 5 days, she will earn $2,700.",
+        "fsl": "A: \u30c6\u30a3\u30ca\u306f\u6bce\u65e5 10 \u6642\u9593\u50cd\u3044\u305f\u306e\u3067\u30015 \u65e5\u9593\u3067 10x5=50 \u6642\u9593\u50cd\u3044\u305f\u3053\u3068\u306b\u306a\u308a\u307e\u3059\u300250 \u6642\u9593\u306e\u3046\u3061 8 \u6642\u9593\u306f\u666e\u901a\u306e\u6642\u7d66\u3067\u652f\u6255\u308f\u308c\u3001\u6b8b\u308a\u306e 42 \u6642\u9593\u306f",
+        "cot": "A: Tina earns $18.00 per hour for 8 hours, which is 8x18 = 144$. For the remaining 2 hours, she earns 1/2 of her regular hourly rate, which is 18"
+      },
+      "es": {
+        "raw": "\n\nTina ganar\u00eda $270,00. Esto se calcula multiplicando su salario por hora ($18,00) por 8 horas (para el trabajo regular) y luego multiplicando su salario por hora m\u00e1s la mitad de su salario por hora ($27,00) por 2 horas (para las horas extras). Esto da un total de $216,00. Lue",
+        "fsl": 990,
+        "cot": "A: Tina earns $18"
+      }
+    }
+  }
+}

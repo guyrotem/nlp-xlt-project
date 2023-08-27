@@ -1,4 +1,4 @@
 def extract_result(text):
     lines = text.split('\n')
-    return lines[len(lines) - 1]
-
+    last_line = lines[len(lines) - 1]
+    return last_line.replace('Answer: ', '')

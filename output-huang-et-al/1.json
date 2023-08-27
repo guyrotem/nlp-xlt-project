@@ -1,0 +1,28 @@
+{
+  "qa": {
+    "index": 1,
+    "question": "Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?",
+    "gold_answer": 10
+  },
+  "result": {
+    "english_raw": "\n\nWeng earned $10 for yesterday's babysitting.",
+    "english_fsl": 10,
+    "lang_results": {
+      "he": {
+        "raw": "\n\n\u05d4\u05d9\u05d0 \u05e8\u05d5\u05d5\u05d9\u05d7 6 \u05d3\u05d5\u05dc\u05e8.",
+        "fsl": 10,
+        "cot": "Wang earned 12 x (50/60) = 10 dollars. The answer is 10."
+      },
+      "ja": {
+        "raw": "\n\n12\u30c9\u30eb \u00d7 50\u5206 = 600\u30c9\u30eb",
+        "fsl": 600,
+        "cot": 10
+      },
+      "es": {
+        "raw": "\n\nWeng gan\u00f3 $12 x 50 minutos = $600.",
+        "fsl": 10,
+        "cot": 10
+      }
+    }
+  }
+}

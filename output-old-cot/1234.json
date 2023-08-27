@@ -1,0 +1,28 @@
+{
+  "qa": {
+    "index": 1234,
+    "question": "There are 9 Fast and the Furious movies, Deepa has seen each one in the theatre three times. She has spent $216 seeing these movies. What is the average price she paid per ticket? ",
+    "gold_answer": 8
+  },
+  "result": {
+    "english_raw": "\n\n$24",
+    "english_fsl": 8,
+    "lang_results": {
+      "he": {
+        "raw": "\n\n216 \u05d3\u05d5\u05dc\u05e8 / 9 \u05e1\u05e8\u05d8\u05d9\u05dd = 24 \u05d3\u05d5\u05dc\u05e8 \u05dc\u05db\u05e8\u05d8\u05d9\u05e1.",
+        "fsl": 24,
+        "cot": 8
+      },
+      "ja": {
+        "raw": "\n\n216\u30c9\u30eb\u00f7(9\u4f5c\u00d73\u56de)=24\u30c9\u30eb",
+        "fsl": 8,
+        "cot": 8
+      },
+      "es": {
+        "raw": "\n\n$24",
+        "fsl": 24,
+        "cot": 8
+      }
+    }
+  }
+}

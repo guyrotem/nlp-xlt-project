@@ -1,0 +1,28 @@
+{
+  "qa": {
+    "index": 6,
+    "question": "Albert is wondering how much pizza he can eat in one day. He buys 2 large pizzas and 2 small pizzas. A large pizza has 16 slices and a small pizza has 8 slices. If he eats it all, how many pieces does he eat that day?",
+    "gold_answer": 48
+  },
+  "result": {
+    "english_raw": "\n\nAlbert would eat 40 pieces of pizza that day.",
+    "english_fsl": 48,
+    "lang_results": {
+      "he": {
+        "raw": "\n\n\u05d0\u05dc\u05d1\u05e8\u05d8 \u05d9\u05d0\u05db\u05dc 32 \u05d7\u05ea\u05d9\u05db\u05d5\u05ea.",
+        "fsl": "A: \u05d0\u05dc\u05d1\u05e8\u05d8 \u05e7\u05d5\u05e0\u05d4 2 \u05e4\u05d9\u05e6\u05d5\u05ea \u05d2\u05d3\u05d5\u05dc\u05d5\u05ea \u05e9\u05db\u05dc \u05d0\u05d7\u05ea \u05de\u05d4\u05df \u05de\u05db\u05d9\u05dc\u05d4 16 \u05e4\u05e8\u05d5\u05e1\u05d5\u05ea. \u05d4\u05dd \u05de\u05e1\u05e4\u05e8\u05d5 \u05d1\u05e1\u05da \u05d4\u05db\u05dc 16x2 = 32 \u05e4\u05e8\u05d5\u05e1\u05d5\u05ea.",
+        "cot": "Q: \u05d0\u05dc\u05d1\u05e8\u05d8 \u05ea\u05d5\u05d4\u05d4 \u05db\u05de\u05d4 \u05e4\u05d9\u05e6\u05d4 \u05d4\u05d5\u05d0 \u05d9\u05db\u05d5\u05dc \u05dc\u05d0\u05db\u05d5\u05dc \u05d1\u05d9\u05d5\u05dd \u05d0\u05d7\u05d3.\u05d4\u05d5\u05d0 \u05e7\u05d5\u05e0\u05d4 2 \u05e4\u05d9\u05e6\u05d5\u05ea \u05d2\u05d3\u05d5\u05dc\u05d5\u05ea \u05d5-2 \u05e4\u05d9\u05e6\u05d5\u05ea \u05e7\u05d8\u05e0\u05d5\u05ea.\u05dc\u05e4"
+      },
+      "ja": {
+        "raw": "\n\n\u30a2\u30eb\u30d0\u30fc\u30c8\u306f\u3001\u305d\u306e\u65e5\u306b 24 \u30b9\u30e9\u30a4\u30b9\u306e\u30d4\u30b6\u3092\u98df\u3079\u308b\u3053\u3068\u306b\u306a\u308a\u307e\u3059\u3002",
+        "fsl": "A: \u5927\u304d\u306a\u30d4\u30b6\u306f2\u679a\u306a\u306e\u3067\u300116\u30b9\u30e9\u30a4\u30b9\u00d72\u679a=32\u30b9\u30e9\u30a4\u30b9\u3002\u5c0f\u3055\u306a\u30d4\u30b6\u306f2\u679a\u306a\u306e\u3067\u30018\u30b9\u30e9\u30a4\u30b9\u00d72\u679a=16\u30b9\u30e9\u30a4\u30b9\u3002\u5168\u90e8\u98df\u3079\u308b\u3068\u3057\u305f\u3089\u300132\u30b9\u30e9\u30a4\u30b9+16\u30b9\u30e9\u30a4\u30b9=48\u30b9\u30e9\u30a4\u30b9\u3002",
+        "cot": "A: Albert will eat 2 large pizzas and 2 small pizzas. Each large pizza has 16 slices, so he will eat 16x2 = 32 slices. Each small pizza"
+      },
+      "es": {
+        "raw": "\n\nAlbert comer\u00e1 40 pedazos de pizza ese d\u00eda.",
+        "fsl": 48,
+        "cot": "A: Albert will eat 2x16 + 2x8 = 48 pieces of pizza that day. The answer is 48."
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "qa": {
+    "index": 2,
+    "question": "Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?",
+    "gold_answer": 5
+  },
+  "result": {
+    "english_raw": "\n\nBetty needs $70 more to buy the wallet.",
+    "english_fsl": 5,
+    "hebrew_fsl": 55,
+    "hebrew_fsl_cot": 70,
+    "japanese_fsl": 95,
+    "japanese_fsl_cot": "95\u30c9\u30eb"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "qa": {
+    "index": 5,
+    "question": "Mark has a garden with flowers. He planted plants of three different colors in it. Ten of them are yellow, and there are 80% more of those in purple. There are only 25% as many green flowers as there are yellow and purple flowers. How many flowers does Mark have in his garden?",
+    "gold_answer": 35
+  },
+  "result": {
+    "english_raw": "\n\nMark has a total of 45 flowers in his garden. 10 of them are yellow, 30 are purple, and 5 are green.",
+    "english_fsl": "35.5",
+    "hebrew_fsl": "40.5",
+    "hebrew_fsl_cot": "20.5",
+    "japanese_fsl": "21.5",
+    "japanese_fsl_cot": "21.5"
+  }
+}

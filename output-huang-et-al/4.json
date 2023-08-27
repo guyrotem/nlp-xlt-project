@@ -1,0 +1,28 @@
+{
+  "qa": {
+    "index": 4,
+    "question": "James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?",
+    "gold_answer": 624
+  },
+  "result": {
+    "english_raw": "\n\nJames writes 3 pages to 2 different friends twice a week, which is 24 pages a month and 288 pages a year.",
+    "english_fsl": 624,
+    "lang_results": {
+      "he": {
+        "raw": "\n\n\u05d1\u05e9\u05e0\u05d4, \u05d2'\u05d9\u05d9\u05de\u05e1 \u05db\u05d5\u05ea\u05d1 \u05e9\u05dc\u05d5\u05e9\u05d9\u05dd \u05e2\u05de\u05d5\u05d3\u05d9\u05dd \u05de\u05db\u05ea\u05d1\u05d9\u05dd - \u05e9\u05e9 \u05de\u05db\u05ea\u05d1\u05d9\u05dd \u05d1\u05db\u05dc \u05e9\u05d1\u05d5\u05e2.",
+        "fsl": 312,
+        "cot": "A: James writes a 3-page letter to two different friends twice a week. He writes 3x2x52 = 312 pages in a year. The answer is 312."
+      },
+      "ja": {
+        "raw": "\n\nJames will write 624 pages of letters in a year. He will write two 3-page letters to two different friends twice a week, which adds up to 24 pages a week, or 1248 pages a year.",
+        "fsl": 624,
+        "cot": 312
+      },
+      "es": {
+        "raw": "\n\nJames escribe 6 p\u00e1ginas por semana, lo que equivale a 312 p\u00e1ginas al a\u00f1o.",
+        "fsl": 624,
+        "cot": 312
+      }
+    }
+  }
+}

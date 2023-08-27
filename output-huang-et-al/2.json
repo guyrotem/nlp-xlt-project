@@ -1,0 +1,28 @@
+{
+  "qa": {
+    "index": 2,
+    "question": "Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?",
+    "gold_answer": 5
+  },
+  "result": {
+    "english_raw": "\n\nBetty needs $70 more to buy the wallet.",
+    "english_fsl": 5,
+    "lang_results": {
+      "he": {
+        "raw": "\n\n\u05d1\u05d8\u05d9 \u05e6\u05e8\u05d9\u05db\u05d4 \u05e2\u05d5\u05d3 85 \u05d3\u05d5\u05dc\u05e8 \u05db\u05d3\u05d9 \u05dc\u05e7\u05e0\u05d5\u05ea \u05d0\u05ea \u05d4\u05d0\u05e8\u05e0\u05e7.",
+        "fsl": 55,
+        "cot": 33
+      },
+      "ja": {
+        "raw": "\n\n\u30d9\u30c6\u30a3\u306f\u8ca1\u5e03\u3092\u8cb7\u3046\u306b\u306f\u3001\u6b8b\u308a\u306e 70 \u30c9\u30eb\u304c\u5fc5\u8981\u3067\u3059\u3002",
+        "fsl": "5\u30c9\u30eb",
+        "cot": 5
+      },
+      "es": {
+        "raw": "\n\nBetty necesita $70 m\u00e1s para comprar la billetera.",
+        "fsl": 5,
+        "cot": 5
+      }
+    }
+  }
+}

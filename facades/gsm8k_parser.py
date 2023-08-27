@@ -27,3 +27,9 @@ class QA:
     index: int
     question: str
     gold_answer: int
+
+
+@dataclass
+class Gsm8kItem:
+    question: str
+    answer: str

@@ -1,0 +1,15 @@
+{
+  "qa": {
+    "index": 1,
+    "question": "Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?",
+    "gold_answer": 10
+  },
+  "result": {
+    "english_raw": "\n\nWeng earned $10 for yesterday's babysitting.",
+    "english_fsl": 10,
+    "hebrew_fsl": 10,
+    "hebrew_fsl_cot": "0.2 \u05e9\u05e2\u05d5\u05ea",
+    "japanese_fsl": 600,
+    "japanese_fsl_cot": "600\u30c9\u30eb"
+  }
+}

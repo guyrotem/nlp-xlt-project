@@ -1,0 +1,15 @@
+{
+  "qa": {
+    "index": 6,
+    "question": "Albert is wondering how much pizza he can eat in one day. He buys 2 large pizzas and 2 small pizzas. A large pizza has 16 slices and a small pizza has 8 slices. If he eats it all, how many pieces does he eat that day?",
+    "gold_answer": 48
+  },
+  "result": {
+    "english_raw": "\n\nAlbert would eat 40 pieces of pizza that day.",
+    "english_fsl": 48,
+    "hebrew_fsl": 48,
+    "hebrew_fsl_cot": 48,
+    "japanese_fsl": 48,
+    "japanese_fsl_cot": 48
+  }
+}

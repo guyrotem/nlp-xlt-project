@@ -1,0 +1,28 @@
+{
+  "qa": {
+    "index": 3,
+    "question": "Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?",
+    "gold_answer": 42
+  },
+  "result": {
+    "english_raw": "\n\nJulie should read 24 pages tomorrow.",
+    "english_fsl": 48,
+    "lang_results": {
+      "he": {
+        "raw": "\n\n\u05ea\u05d7\u05d9\u05dc\u05d4 \u05d4\u05d9\u05d0 \u05d4\u05e6\u05dc\u05d9\u05d7\u05d4 \u05dc\u05e7\u05e8\u05d5\u05d0 12 \u05e2\u05de\u05d5\u05d3\u05d9\u05dd \u05d5\u05d4\u05d9\u05d5\u05dd \u05e7\u05e8\u05d0\u05d4 \u05e4\u05d9 \u05e9\u05e0\u05d9\u05d9\u05dd \u05e2\u05de\u05d5\u05d3\u05d9\u05dd \u05de\u05d0\u05ea\u05de\u05d5\u05dc, \u05db\u05da \u05e9\u05e0\u05d5\u05ea\u05e8\u05d5 106 \u05e2\u05de\u05d5\u05d3\u05d9\u05dd. \u05d0\u05dd \u05d4\u05d9\u05d0 \u05e8\u05d5\u05e6\u05d4 \u05dc\u05e7\u05e8\u05d5\u05d0 \u05d7\u05e6\u05d9 \u05de\u05d4\u05e2\u05de\u05d5\u05d3\u05d9\u05dd \u05d4\u05e0\u05d5\u05ea\u05e8\u05d9\u05dd, \u05d4\u05d9\u05d0 \u05ea\u05e6\u05d8\u05e8\u05da \u05dc\u05e7\u05e8\u05d5\u05d0 53 \u05e2\u05de\u05d5\u05d3\u05d9\u05dd.",
+        "fsl": 53,
+        "cot": 53
+      },
+      "ja": {
+        "raw": "\n\n\u660e\u65e5\u3001\u6b8b\u308a\u306e\u30da\u30fc\u30b8\u306e\u534a\u5206\u3092\u8aad\u3080\u5834\u5408\u300148\u30da\u30fc\u30b8\u3092\u8aad\u3080\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059\u3002",
+        "fsl": 48,
+        "cot": 60
+      },
+      "es": {
+        "raw": "\n\nJulie deber\u00eda leer 48 p\u00e1ginas ma\u00f1ana para leer la mitad de las p\u00e1ginas restantes.",
+        "fsl": 42,
+        "cot": "A: Julie should read 30 pages tomorrow."
+      }
+    }
+  }
+}

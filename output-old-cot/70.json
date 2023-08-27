@@ -1,0 +1,15 @@
+{
+  "qa": {
+    "index": 70,
+    "question": "Tim has 30 less apples than Martha, and Harry has half as many apples as Tim. If Martha has 68 apples, how many apples does Harry have?",
+    "gold_answer": 19
+  },
+  "result": {
+    "english_raw": "\n\nHarry has 15 apples.",
+    "english_fsl": 19,
+    "hebrew_fsl": 57,
+    "hebrew_fsl_cot": 57,
+    "japanese_fsl": 19,
+    "japanese_fsl_cot": 19
+  }
+}

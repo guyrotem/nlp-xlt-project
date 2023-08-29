@@ -71,10 +71,10 @@ if __name__ == '__main__':
         '$216 seeing these movies. What is the average price she paid per ticket? '
     # result = run(q)
     # dump(QA(1234, q, 8), result)
-    # print(result)
-    for qa in gsm8k_parser.get_items()[11:12]:
-        if qa.index in [11]:
-            result = run(qa.question)
-            dump(qa, result)
-            print(result)
-            print(qa.gold_answer)
+    # print(result))
+    for qa in gsm8k_parser.get_items()[11:21]:
+        print('checking: ' + qa.question + '\nAnswer: {}'.format(qa.gold_answer))
+        result = run(qa.question)
+
+        print(result)
+        dump(qa, result)

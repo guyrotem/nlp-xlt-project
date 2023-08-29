@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 class Gsm8kParser:
     def __init__(self):
-        with open('data/GSM8K_100.json') as gsm8k_file:
+        with open('data/GSM8K_100_test.json') as gsm8k_file:
             contents = json.load(gsm8k_file)
             rows = contents['rows']
             self._qa = list(map(_row_mapper, rows))

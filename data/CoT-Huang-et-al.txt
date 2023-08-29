@@ -3,4 +3,3 @@ Q: {{ question }}
 You should retell the question in English.
 You should do step-by-step answer to obtain a number answer.
 You should step-by-step answer the request.
-You should tell me the  answer in this format 'A:'.

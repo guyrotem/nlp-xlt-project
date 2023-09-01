@@ -41,7 +41,7 @@ def main(force_cpu: bool):
     en = load_csv('data/mgsm_en.csv')
 
     with torch.no_grad():
-        for idx, prompt in en:
+        for idx, prompt in enumerate(en):
             MAX_LENGTH = 100
 
             inputs = tokenizer(prompt, return_tensors="pt")

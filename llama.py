@@ -43,6 +43,7 @@ def main(force_cpu: bool):
     with torch.no_grad():
         for idx, prompt in enumerate(en):
             MAX_LENGTH = 100
+            # print("PROCESSING {} {}".format(idx, prompt))
 
             inputs = tokenizer(prompt, return_tensors="pt")
             generate_ids = model.generate(
@@ -52,7 +53,7 @@ def main(force_cpu: bool):
                 generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False
             )
 
-            print(idx + ',' + decoding[0])
+            print("{},{}".format(idx, decoding[0]))
 
 
 if __name__ == "__main__":
